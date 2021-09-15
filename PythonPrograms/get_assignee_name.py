@@ -22,6 +22,12 @@ def find_assignee_name(assignment_group, summary):
         (findersheet['Selection Criteria']=='KEYWORD'),
         ['Unique keywords', 'Cluster', 'Assignee Name', 'SPOC Name']];
     flag=0
+    
+    criteria_keyword=findersheet.loc[
+        (findersheet['Assignment Group']==assignment_group) &
+        (findersheet['Selection Criteria']=='KEYWORD'),
+        ['Unique keywords', 'Cluster', 'Assignee Name', 'SPOC Name']];
+    flag=0
 
     if(criteria_both.shape[0]>0 and flag==0):
         for index, row in criteria_both.iterrows():
