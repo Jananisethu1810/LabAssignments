@@ -13,6 +13,7 @@ public class DifferenceCalculation {
 		}
 		squareOfSum+=sum*sum;
 		diff=sumOfSquares-squareOfSum;
+		System.out.println("Line Added");
 		return diff;
 	}
 	public static void main(String[] args) {
