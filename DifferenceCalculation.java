@@ -5,6 +5,14 @@
  */
 import java.util.*;
 public class DifferenceCalculation {
+	public static void display(){
+		print("Display method")
+	}
+	public static void sum(){
+		int a = 2;
+		int b = 3;
+		print("The sum of a and b is "+(a+b))
+	}
 	public static int calculateDifference(int num) {
 		int diff, sumOfSquares=0, squareOfSum=0, sum=0;
 		for(int itr=1;itr<=num;itr++) {
