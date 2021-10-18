@@ -22,7 +22,7 @@ public class DifferenceCalculation {
 		}
 		squareOfSum+=sum*sum;
 		diff=sumOfSquares-squareOfSum;
-		System.out.println("Line Added");
+		System.out.println("Print Statement");
 		return diff;
 	}
 	
@@ -34,7 +34,7 @@ public class DifferenceCalculation {
 		}
 		squareOfSum+=sum*sum;
 		diff=sumOfSquares-squareOfSum;
-		System.out.println("Line Added");
+		System.out.println("Print Statement");
 		return diff;
 	}
 	public static void main(String[] args) {
