@@ -13,8 +13,21 @@ public class DifferenceCalculation {
 		int b = 3;
 		print("The sum of a and b is "+(a+b))
 	}
+	
 	public static int calculateDifference(int num) {
 		int diff, sumOfSquares=0, squareOfSum=0, sum=0;
+		for(int itr=1;itr<=num;itr++) {
+			sumOfSquares=sumOfSquares+(itr*itr);
+			sum=sum+itr;
+		}
+		squareOfSum+=sum*sum;
+		diff=sumOfSquares-squareOfSum;
+		System.out.println("Line Added");
+		return diff;
+	}
+	
+	public static int calculateDifference(int num, int sum) {
+		int diff, sumOfSquares=0, squareOfSum=0;
 		for(int itr=1;itr<=num;itr++) {
 			sumOfSquares=sumOfSquares+(itr*itr);
 			sum=sum+itr;
@@ -29,6 +42,8 @@ public class DifferenceCalculation {
 		System.out.println("Enter the number");
 		int number=scan.nextInt();
 		int difference=calculateDifference(number); 
+		int sum = 0
+		int diff = calculateDifference(number, sum)
 		System.out.print("The difference is "+difference);
 	}
 
